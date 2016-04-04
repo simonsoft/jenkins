@@ -16,6 +16,8 @@ Documentation:
   Enabled: false
 Encoding:
   Enabled: false
+Style/SpaceBeforeFirstArg:
+  Enabled: false
 LineLength:
   Enabled: false
 MethodLength:
@@ -28,7 +30,7 @@ RaiseArgs:
   Enabled: false
 SignalException:
   Enabled: false
-SingleSpaceBeforeFirstArg:
-  Enabled: false
-TrailingComma:
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
