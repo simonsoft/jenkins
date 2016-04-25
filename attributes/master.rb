@@ -152,7 +152,7 @@ default['jenkins']['master'].tap do |master|
   #
   # The port which the Jenkins process will listen on.
   #
-  master['port'] = 8080
+  master['port'] = 8090
 
   #
   # The top-level endpoint for the Jenkins master. By default, this is a
