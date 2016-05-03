@@ -192,20 +192,19 @@ default['jenkins']['master'].tap do |master|
   #
   master['runit']['sv_timeout'] = 7
 
-  # http://pkg.jenkins-ci.org/debian/binary/jenkins_1.658_all.deb
-  # http://pkg.jenkins-ci.org/debian
+  #
   # Repository URL. Default is latest
   #
   master['repository'] = case node['platform_family']
-                         when 'debian' then 'http://pkg.jenkins-ci.org/debian-stable/'
+                         when 'debian' then 'http://pkg.jenkins-ci.org/debian'
                          when 'rhel' then 'http://pkg.jenkins-ci.org/redhat'
                          end
 
-  # http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key
+  #
   # Repository key. Default is latest
   #
   master['repository_key'] = case node['platform_family']
-                             when 'debian' then 'http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key'
+                             when 'debian' then 'http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key'
                              when 'rhel' then 'http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key'
                              end
 
